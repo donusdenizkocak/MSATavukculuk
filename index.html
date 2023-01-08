@@ -16,8 +16,7 @@
           .carousel-caption span{color: yellow;font-size: larger;font-weight: bold;}
           .carousel-caption .sales{padding: 20px;color: #fff;text-decoration: none;border-radius: 10px;background-color: red;}
           .blackless .carousel-caption{color: #fff;font-weight: bold;}
-         .carousel-item{height: 100vh;}
-         .carousel-item img{height:100%;width:100%;object-fit: cover;}
+         .carousel-item img{height:90%;width:100%;object-fit: cover;}
           nav.navbar{background-color: rgb(150, 198, 136);}
           .aboutus{font-size: 1.2em;text-align: center;position: relative;}
           /* .aboutus img{position: absolute;top: 25%;left: 50px;} */
@@ -25,29 +24,32 @@
           .square ul{list-style-type: none;padding-inline-start: 0;}
           body{background-color: #e2e2e2;}
           .footer-bg{margin-top: 50px;background-color: #29bdd6;color: #fff;}
-.footer-bg ul li{list-style-type: none;}
-.footer-contact a{color: #000;}
-.footer-end{background-color: #333333;}
-.footer-end a{color: #fff;}
-.baslik{font-size: 3rem;font-weight: bold;}
-.caro img{overflow: hidden;transition: .5s ease-in-out}
-.caro img:hover{
-    -ms-transform: scale(1.1); /* IE 9 */
-    -webkit-transform: scale(1.1); /* Safari 3-8 */
-     transform: scale(1.1); 
-     opacity: .5;
-    }
-
-.search-icon{opacity: 0;position: absolute;top: 50%;left: 50%;transition: all .5s ease-in;z-index: 33;}
-.team-image{overflow: hidden;position: relative;}
-.team-image a{color: #000 !important;}
-.team-image:hover .search-icon{opacity: 1;}
+         .footer-bg ul li{list-style-type: none;}
+         .footer-contact a{color: #000;}
+         .footer-end{background-color: #333333;}
+         .footer-end a{color: #fff;}
+         .baslik{font-size: 3rem;font-weight: bold;}
+         .caro img{overflow: hidden !important;transition: .5s ease-in-out}
+        .caro img:hover{
+          -ms-transform: scale(1.1); /* IE 9 */
+          -webkit-transform: scale(1.1); /* Safari 3-8 */
+           transform: scale(1.1); 
+          opacity: .5;
+         }
+       .imagehvr{transition:opacity .5s ease-in-out} 
+       .imagehvr:hover{opacity:.5;}  
+       .search-icon{opacity: 0;position: absolute;top: 50%;left: 50%;transition: all .5s ease-in;z-index: 33;}
+       .team-image{overflow: hidden;position: relative;}
+       .team-image a{color: #000 !important;}
+       .team-image:hover .search-icon{opacity: 1;}
+       .whatsapp{position: fixed;bottom:25px;right: 25px;z-index: 100;}
 
 
           @media screen and (max-width:480px) {
             .aboutus img{display: none;} 
             #slider a{padding: 0;}
             .navbar-nav ul li{margin-left: 40px;color: #000 !important;}
+            #slider1 .card-title{font-size: 0.8rem;}
           }
            </style>
 
@@ -83,6 +85,7 @@
             </div>
           </nav>
       </header>
+      <article class="whatsapp"><a href="https://wa.me/905332538182" target="_blank"><img src="images11/whatsapp.png" alt="whatsapp" width="50px" height="50px" class="rounded-2"></a></article>
 
         <section>
             <div id="slider1" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false" data-bs-interval="1000">
@@ -91,20 +94,20 @@
                     <button type="button" data-bs-target="#slider1" data-bs-slide-to="1" aria-label="Slide 2"></button>
                   </div>
                 <div class="carousel-inner">
-                  <div class="carousel-item active blackless" data-bs-interval="7000">
-                    <img src="images11/tvk6.jpg" class="d-block w-100 img-thumbnail p-0" alt="...">
+                  <div class="carousel-item active blackless" data-bs-interval="5000">
+                    <img src="images11/tvk6.jpg" class="d-block w-100 img-thumbnail p-0" alt="msa-tavukçuluk">
                     <div class="carousel-caption d-none d-md-block">
                         <h4>Uzmanların tercihi <span>Erpiliç</span> ve <span>Şenpiliç</span> güvencesiyle</h4>
                         <p>Kalite ve Uygun Fiyatlarla</p>
-                       <p class="mt-5"> <a href="#" class="sales border-2  text-center px-5 ">İLETİŞİM</a></p>
+                       <p class="mt-5"> <a href="https://wa.me/905332538182" target="_blank" class="link sales border-2  text-center px-5">İLETİŞİM</a></p>
                       </div>
                   </div>
-                  <div class="carousel-item" data-bs-interval="7000">
+                  <div class="carousel-item" data-bs-interval="5000">
                     <img src="images11/tvk4.jpg" class="d-block w-100 img-thumbnail p-0" alt="tavuk">
                     <div class="carousel-caption d-none d-md-block">
                       <h4>Uzmanların tercihi <span>Erpiliç</span> ve <span>Şenpiliç</span> güvencesiyle</h4>
                       <p>Toptan taze tavuk</p>
-                      <p class="mt-5"><a href="#" class="sales border-2 fw-bold  text-center px-3">ÜRÜNLERİMİZ</a></p>
+                      <p class="mt-5"><a href="#products" class="sales border-2 fw-bold  text-center px-3">ÜRÜNLERİMİZ</a></p>
                     </div>
                   </div>
                 </div> 
@@ -114,7 +117,7 @@
 
          <article class="caro">
           <h3 class="text-center mt-5 baslik wow bounceInUp" id="products">Ürün Çeşitlerimiz</h3>
-          <div class="container mt-5 wow fadeInUp">
+          <div class="container mt-5 wow fadeInLeft">
                     <div class="square row mb-5">
                       <div class="one col-12 col-lg-6">
                         <div col class="card bg-white border-radius">
@@ -222,7 +225,7 @@
           <div class="container">
           <div class="row">
             <div class="col-12 col-lg-6">
-          <img src="images11/tvuk1.jpg" alt="logo" class="bg-light m-4 w-100">
+          <img src="images11/tvuk1.jpg" alt="logo" class="bg-light m-4 w-100 imagehvr">
           </div>
           <div class="col-12 col-lg-6 pt-3 ps-5">
           <p>  Hassasiyetlerinizi dikkate alarak <b>hijyenik şartlarda</b> ve <b>helal kesim</b> standartları gözetilerek kesilen; tercihe göre <b>kuru yolum</b> tavuk ürünlerinide bulabileceginiz zengin ürün yelpazesine sahip bir işletmedir.<br>
@@ -240,7 +243,7 @@
          </section>
 
          <section>
-          <div class="container bg-light mt-5 p-5 wow fadeInLeft">   <!-- icon -->
+          <div class="container bg-light mt-4 p-4 wow fadeInLeft">   <!-- icon -->
             <div class="p-5 text-center text-danger fw-bold baslik"><i class="fa-solid fa-user-chef"></i> Pişirme Önerisi</div>
             <div id="slider1" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-pause="false"
                 data-bs-interval="5000">
@@ -249,7 +252,7 @@
                         <div class="row">
                             <div class="d-none d-lg-inline col-lg-4">
                                 <div class="card bg-white">
-                                  <img src="images11/tve8.jpg" alt="tavukbeyti" class="card-img-top" />
+                                  <img src="images11/tve8.jpg" alt="tavukbeyti" class="card-img-top imagehvr" />
                                     <div class="card-body text-center">
                                         <h5 class="card-title">
                                             Barbekü Kanat 1
@@ -262,39 +265,39 @@
                             </div>
                             <div class="d-none d-lg-inline col-lg-4">
                                 <div class="card bg-white">
-                                  <img src="images11/tve1.jpg" alt="doner" class="card-img-top img-fluid" />
+                                  <img src="images11/tve1.jpg" alt="doner" class="card-img-top img-fluid imagehvr" />
                                     <div class="card-body text-center">
                                         <h5 class="card-title">
-                                            Haşlanmış Tavuklu Erişte
+                                          Tavuklu Erişte
                                         </h5>
                                         <div class="card-text text-success fw-bold">
-                                          <a href="https://youtu.be/mwhlQ4JmXaM" target="_blank" class="btn btn-danger px-3 px-sm-3 px-md-4 px-lg-5 m-2">Tarif</a>
+                                          <a href="https://www.youtube.com/watch?v=jRMl6X5_Sf8" target="_blank" class="btn btn-danger px-3 px-sm-3 px-md-4 px-lg-5 m-2">Tarif</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-6 col-lg-4">
                                 <div class="card bg-white">
-                                  <img src="images11/tve2.jpg" alt="izgara" class="card-img-top" />
+                                  <img src="images11/tve2.jpg" alt="izgara" class="card-img-top imagehvr" />
                                     <div class="card-body text-center">
                                         <h5 class="card-title">
-                                          Tavuk Kızarmış But  
+                                          Fırında Tavuk İncik  
                                         </h5>
                                         <div class="card-text text-success fw-bold">
-                                          <a href="https://youtu.be/Ij_dIPLoXzo" target="_blank" class="btn btn-danger px-3 px-sm-3 px-md-4 px-lg-5 m-2">Tarif</a>
+                                          <a href="https://www.youtube.com/watch?v=9ryXk_SmaPE" target="_blank" class="btn btn-danger px-3 px-sm-3 px-md-4 px-lg-5 m-2">Tarif</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-6 col-lg-4">
                                 <div class="card bg-white">
-                                    <img src="images11/tve3.jpg" class="card-img-top" alt="Ürün 4" />
+                                    <img src="images11/tve3.jpg" class="card-img-top imagehvr" alt="Ürün 4" />
                                     <div class="card-body text-center">
                                         <h5 class="card-title">
-                                            Progresso Italian Style
+                                            Tavuk Sarma
                                         </h5>
                                         <div class="card-text text-success fw-bold">
-                                          <a href="https://youtu.be/Ij_dIPLoXzo" target="_blank" class="btn btn-danger px-3 px-sm-3 px-md-4 px-lg-5 m-2">Tarif</a>
+                                          <a href="https://www.youtube.com/watch?v=GAihZpu9JfE" target="_blank" class="btn btn-danger px-3 px-sm-3 px-md-4 px-lg-5 m-2">Tarif</a>
                                         </div>
                                     </div>
                                 </div>
@@ -302,13 +305,13 @@
 
                             <div class="col-6 col-lg-4">
                               <div class="card bg-white">
-                                  <img src="images11/tve11.jpg" class="card-img-top" alt="Ürün 6" />
+                                  <img src="images11/tve11.jpg" class="card-img-top imagehvr" alt="Ürün 6" />
                                   <div class="card-body text-center">
                                       <h5 class="card-title">
-                                          Progresso Italian Style
+                                        Izgara Tavuk Göğsü
                                       </h5>
                                       <div class="card-text text-success fw-bold">
-                                        <a href="https://youtu.be/Ij_dIPLoXzo" target="_blank" class="btn btn-danger px-3 px-sm-3 px-md-4 px-lg-5 m-2">Tarif</a>
+                                        <a href="https://www.youtube.com/watch?v=a-B_WOY_U4Q" target="_blank" class="btn btn-danger px-3 px-sm-3 px-md-4 px-lg-5 m-2">Tarif</a>
                                       </div>
                                   </div>
                               </div>
@@ -316,13 +319,13 @@
 
                           <div class="col-6 col-lg-4">
                             <div class="card bg-white">
-                                <img src="images11/tve12.jpg" class="card-img-top" alt="Ürün 6" />
+                                <img src="images11/tve12.jpg" class="card-img-top imagehvr" alt="Ürün 6" />
                                 <div class="card-body text-center">
                                     <h5 class="card-title">
-                                        Progresso Italian Style
+                                        Izgara Tavuklu Salata
                                     </h5>
                                     <div class="card-text text-success fw-bold">
-                                      <a href="https://youtu.be/Ij_dIPLoXzo" target="_blank" class="btn btn-danger px-3 px-sm-3 px-md-4 px-lg-5 m-2">Tarif</a>
+                                      <a href="https://www.youtube.com/watch?v=qbIgpoOS61w" target="_blank" class="btn btn-danger px-3 px-sm-3 px-md-4 px-lg-5 m-2">Tarif</a>
                                     </div>
                                 </div>
                             </div>
@@ -336,13 +339,13 @@
                         <div class="row">
                             <div class="col-6 col-lg-4">
                                 <div class="card bg-white">
-                                    <img src="images11/tve4.jpg" class="card-img-top" alt="Ürün 5" />
+                                    <img src="images11/tve4.jpg" class="card-img-top imagehvr" alt="Ürün 5" />
                                     <div class="card-body text-center text-center">
                                         <h5 class="card-title">
-                                          Fırında Kızarmış Tavuk
+                                          Fırında Bütün Tavuk
                                         </h5>
                                         <div class="card-text text-success fw-bold">
-                                          <a href="https://youtu.be/Ij_dIPLoXzo" target="_blank" class="btn btn-danger px-3 px-sm-3 px-md-4 px-lg-5 m-2">Tarif</a>
+                                          <a href="https://www.youtube.com/watch?v=cI1Sm8Xl21k" target="_blank" class="btn btn-danger px-3 px-sm-3 px-md-4 px-lg-5 m-2">Tarif</a>
                                         </div>
                                     </div>
                                 </div>
@@ -350,13 +353,13 @@
     
                             <div class="col-6 col-lg-4">
                                 <div class="card bg-white">
-                                    <img src="images11/tve9.jpg" class="card-img-top" alt="Ürün 6" />
+                                    <img src="images11/tve9.jpg" class="card-img-top imagehvr" alt="Ürün 6" />
                                     <div class="card-body text-center">
                                         <h5 class="card-title">
-                                            Progresso Italian Style
+                                            Fırında Tavuk But
                                         </h5>
                                         <div class="card-text text-success fw-bold">
-                                          <a href="https://youtu.be/Ij_dIPLoXzo" target="_blank" class="btn btn-danger px-3 px-sm-3 px-md-4 px-lg-5 m-2 ">Tarif</a>
+                                          <a href="https://www.youtube.com/watch?v=YT2RSTy6y2w" target="_blank" class="btn btn-danger px-3 px-sm-3 px-md-4 px-lg-5 m-2 ">Tarif</a>
                                         </div>
                                     </div>
                                 </div>
@@ -364,13 +367,13 @@
 
                             <div class="d-none d-lg-inline col-lg-4">
                               <div class="card bg-white">
-                                  <img src="images11/tve13.jpg" class="card-img-top" alt="Ürün 6" />
+                                  <img src="images11/tve13.jpg" class="card-img-top imagehvr" alt="Ürün 6" />
                                   <div class="card-body text-center">
                                       <h5 class="card-title">
-                                          Progresso Italian Style
+                                          Körili Brokoli Tavuk
                                       </h5>
                                       <div class="card-text text-success fw-bold">
-                                        <a href="https://youtu.be/Ij_dIPLoXzo" target="_blank" class="btn btn-danger px-3 px-sm-3 px-md-4 px-lg-5 m-2">Tarif</a>
+                                        <a href="https://www.youtube.com/watch?v=ZMMRPsnYPSI" target="_blank" class="btn btn-danger px-3 px-sm-3 px-md-4 px-lg-5 m-2">Tarif</a>
                                       </div>
                                   </div>
                               </div>
@@ -378,13 +381,13 @@
 
                             <div class="col-6 col-lg-4">
                               <div class="card bg-white">
-                                  <img src="images11/tve10.jpg" class="card-img-top" alt="Ürün 6" />
+                                <img src="images11/tve5.jpg" class="card-img-top imagehvr" alt="Ürün 7" />
                                   <div class="card-body text-center">
                                       <h5 class="card-title">
-                                          Progresso Italian Style
+                                          Şinitzel
                                       </h5>
                                       <div class="card-text text-success fw-bold">
-                                        <a href="https://youtu.be/Ij_dIPLoXzo" target="_blank" class="btn btn-danger px-3 px-sm-3 px-md-4 px-lg-5 m-2">Tarif</a>
+                                        <a href="https://www.youtube.com/watch?v=P14s7SgDU04" target="_blank" class="btn btn-danger px-3 px-sm-3 px-md-4 px-lg-5 m-2">Tarif</a>
                                       </div>
                                   </div>
                               </div>
@@ -392,13 +395,13 @@
     
                             <div class="col-6 col-lg-4">
                                 <div class="card bg-white">
-                                    <img src="images11/tve5.jpg" class="card-img-top" alt="Ürün 7" />
+                                  <img src="images11/tve10.jpg" class="card-img-top imagehvr" alt="Ürün 6" />                                   
                                     <div class="card-body text-center">
                                         <h5 class="card-title">
-                                            Progresso Italian Style
+                                            Brokolili Tavuk
                                         </h5>
                                         <div class="card-text text-success fw-bold">
-                                          <a href="https://youtu.be/Ij_dIPLoXzo" target="_blank" class="btn btn-danger px-3 px-sm-3 px-md-4 px-lg-5 m-2">Tarif</a>
+                                          <a href="https://www.youtube.com/watch?v=pCmGZLXzOvI" target="_blank" class="btn btn-danger px-3 px-sm-3 px-md-4 px-lg-5 m-2">Tarif</a>
                                         </div>
                                     </div>
                                 </div>
@@ -406,13 +409,13 @@
     
                             <div class="d-none d-lg-inline col-lg-4">
                                 <div class="card bg-white">
-                                    <img src="images11/tve6.jpg" class="card-img-top" alt="Ürün 8" />
+                                    <img src="images11/tve6.jpg" class="card-img-top imagehvr" alt="Ürün 8" />
                                     <div class="card-body text-center">
                                         <h5 class="card-title">
-                                            Progresso Italian Style
+                                          Tavuklu Özbek Pilavı 
                                         </h5>
                                         <div class="card-text text-success fw-bold">
-                                          <a href="https://youtu.be/Ij_dIPLoXzo" target="_blank" class="btn btn-danger px-3 px-sm-3 px-md-4 px-lg-5 m-2">Tarif</a>
+                                          <a href="https://www.youtube.com/watch?v=dWCf4hjLiDA" target="_blank" class="btn btn-danger px-3 px-sm-3 px-md-4 px-lg-5 m-2">Tarif</a>
                                         </div>
                                     </div>
                                 </div>
@@ -437,8 +440,9 @@
                   <li><i class="fa-solid fa-envelope pe-3"></i>  tavukmsa06@gmail.com</li>
                 </ul>
               </div>
-      
-              
+              <div class="col-lg-6"> 
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3057.3952461414483!2d32.787805615996525!3d39.977271788101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sMSA%20tavuk%C3%A7uluk%20ye%C5%9Filevler%20mahallesi%20%20918%20cadde%20921%20sokak%20sokak%20ba%C5%9F%C4%B1%20yenimahalle%20ankara!5e0!3m2!1str!2str!4v1673120205812!5m2!1str!2str" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
             </div>
           </div>
           </div>
